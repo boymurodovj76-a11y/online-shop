@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="shopuz">
+
+<header class="navbar">
+    <h2 class="logo">✦ <span id="brand">ShopUZ</span></h2>
+
+    <nav id="nav">
+        <a href="#home">Bosh sahifa</a>
+        <a href="#products">Mahsulotlar</a>
+        <a href="#products">Aksiyalar</a>
+    </nav>
+
+    <div class="nav-right">
+        <input type="search" id="search" placeholder="Qidirish...">
+        <button id="cartButton">🛒 <span id="count">0</span></button>
+        <button id="menuButton">☰</button>
+    </div>
+</header>
+
+<div class="themes">
+    <button data-theme="shopuz">01 ShopUZ</button>
+    <button data-theme="marketpro">02 MarketPro</button>
+    <button data-theme="shopmax">03 ShopMax</button>
+</div>
+
+<main id="home">
+
+    <aside class="categories">
+        <h3>Kategoriyalar</h3>
+        <button data-category="Barchasi">✦ Barchasi</button>
+        <button data-category="Telefon">📱 Telefonlar</button>
+        <button data-category="Kompyuter">💻 Kompyuterlar</button>
+        <button data-category="Audio">🎧 Audio</button>
+        <button data-category="Aksessuar">⌚ Aksessuarlar</button>
+    </aside>
+
+    <section class="content">
+
+        <div class="hero">
+            <div>
+                <span class="subtitle">YANGI MAVSUM</span>
+                <h1 id="heroTitle">
+                    Texnologiya — endi yanada yaqin!
+                </h1>
+                <p>Sevimli mahsulotlaringizni qulay narxlarda xarid qiling.</p>
+                <a href="#products" class="buy-btn">Xarid qilish →</a>
+            </div>
+
+            <div class="hero-image">📱 🎧 ⌚</div>
+            <span class="discount">-30%</span>
+        </div>
+
+        <div class="section-title" id="products">
+            <h2>🔥 Ommabop mahsulotlar</h2>
+            <span id="resultCount">0 ta mahsulot</span>
+        </div>
+
+        <div class="product-grid" id="productGrid"></div>
+
+    </section>
+
+    <aside class="cart">
+        <h3>🛒 Savatcha</h3>
+
+        <div id="cartItems">
+            <p class="empty">Savatcha hozircha bo‘sh.</p>
+        </div>
+
+        <div class="cart-footer">
+            <div class="total">
+                <span>Jami:</span>
+                <strong id="total">0 so‘m</strong>
+            </div>
+
+            <button id="checkout" class="buy-btn">
+                Buyurtma berish →
+            </button>
+        </div>
+    </aside>
+
+</main>
+
+<footer>
+    <p>© 2026 <b id="footerBrand">ShopUZ</b></p>
+    <p>Sevimli xaridlaringiz — bir joyda.</p>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
